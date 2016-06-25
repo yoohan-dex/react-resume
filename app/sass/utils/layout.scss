@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+.col {
+  position: relative;
+  min-height: 1px;
+  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width /2);
+  float: left;
+}
+
