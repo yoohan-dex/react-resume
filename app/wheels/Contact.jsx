@@ -27,7 +27,7 @@ const Contact = (contact) => {
     case 'blog':
       return (
         <li className="contact-blog">
-          <a href={contact.value}>{contact.value}</a>  
+          <a href={contact.value}>{contact.value}</a>
         </li>
       );
     case 'phone':
@@ -35,7 +35,7 @@ const Contact = (contact) => {
         <li className="contact-phone">
           {contact.value}
         </li>
-      )
+      );
     default:
       return null;
   }
