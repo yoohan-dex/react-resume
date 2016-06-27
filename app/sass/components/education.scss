@@ -1,0 +1,22 @@
+.education-name {
+  font-size: $font-size-huge;
+  font-weight: bold;
+  margin: $padding-large-vertical 0 $padding-small-vertical 0 ;
+}
+
+.education-major,
+.education-honor {
+  list-style-type: none;
+  line-height: $line-height-base;
+  margin: 0;
+  padding: 0;
+}
+@include set-section-icon(education, $fa-var-book);
+
+.education-major {
+  @include set-li-icon($fa-var-graduation-cap);
+}
+.education-honor {
+  
+  @include set-li-icon($fa-var-trophy);
+}

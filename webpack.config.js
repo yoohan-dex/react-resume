@@ -26,7 +26,8 @@ module.exports = {
   },
   sassLoader: {
     includePaths: [path.resolve(__dirname, './app/sass/utils'),
-                  path.resolve(__dirname, './app/sass/components')],
+                  path.resolve(__dirname, './app/sass/components'),
+                  path.resolve(__dirname, './app/sass/wheels')],
     outputStyle: 'compressed',
     sourceMap: true,
   },

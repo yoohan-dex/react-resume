@@ -13,9 +13,43 @@
 }
 .col {
   position: relative;
-  min-height: 1px;
   padding-left: ($grid-gutter-width / 2);
   padding-right: ($grid-gutter-width /2);
   float: left;
 }
+
+//col-1 to col-12 
+@for $index from 1 through $grid-columns{
+  .col-#{$index}{
+    width: percentage($index / $grid-columns);
+    @if $index > $grid-columns-breakpoint{
+      @media screen {
+        @media (max-width: $grid-float-breakpoint){
+          width : 100%;
+          float : none;
+          padding : 0;
+        }
+      } 
+    }
+    @if $index <= $grid-columns-breakpoint{
+      @media print {
+        width: percentage($index / $grid-columns-breakpoint);
+      }
+    }
+  }
+}
+
+.first {
+   padding-left: 0;
+}
+
+.last {
+   padding-right: 0;
+}
+
+@mixin float-container {
+    overflow-y: hidden;
+    zoom: 1;
+}
+
 

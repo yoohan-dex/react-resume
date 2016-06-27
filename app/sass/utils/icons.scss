@@ -1,0 +1,59 @@
+@mixin fa {
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  font-smoothing: grayscale;
+  tansform: translate(0,0);
+}
+
+@mixin fa-icon($size, $padding, $background, $foreground : $easy-white){
+  @include fa;
+  background-color: $background;
+  color: $foreground;
+
+  border-radius: $border-radius-circle;
+  float: left;
+
+  width: $size;
+  height: $size;
+  padding: $padding;
+
+  text-align: center;
+  line-height: $size;
+
+  font-size: $size - $padding;
+}
+@mixin fa-li {
+  @include fa;
+  padding-right: $padding-large-horizontal;
+} 
+
+@mixin set-li-icon ($icon){
+  
+    padding-left: $padding-base-horizontal + $font-size-base;
+  
+  &:before{
+    @include fa;
+    content: $icon;
+    width: $padding-base-horizontal + $font-size-base;
+    margin-left: -$padding-base-horizontal - $font-size-base;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

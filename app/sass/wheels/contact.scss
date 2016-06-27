@@ -1,0 +1,13 @@
+$contact-map: (
+  github: $fa-var-github-square,
+  rss: $fa-var-rss,
+  phone: $fa-var-phone,
+  envelope: $fa-var-envelope,
+  wechat: $fa-var-weixin,
+  weibo: $fa-var-weibo
+  );
+@each $type, $icon in $contact-map {
+  .contact-#{$type} {
+    @include set-li-icon($icon);
+  }
+}

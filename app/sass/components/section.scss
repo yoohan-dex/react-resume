@@ -1,0 +1,45 @@
+$sec-icon-size: 32px;
+$sec-icon-padding: 6px;
+
+section {
+  margin-bottom: $padding-huge-vertical;
+};
+
+.sec-title-wrapper{
+  @include float-container;
+}
+
+.sec-title{
+  float: left;
+  padding: 0;
+  margin: 0 0 0 $padding-small-horizontal;
+  @include float-container;
+}
+
+.sec-title-ch {
+  font-size: $font-size-large;
+  float: left;
+  font-weight: bold;
+}
+
+.sec-title-en {
+  font-size: $font-size-base;
+  float: left;
+  clear: left;
+  color: $bright-color;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+@mixin fa-sec-icon($content){
+  @include fa-icon($sec-icon-size, $sec-icon-padding, $text-color);
+  content: $content;
+}
+.sec-title-wrapper::before {
+  @include fa-sec-icon($fa-var-github-square)
+}
+@mixin set-section-icon($section-name, $content){
+  .#{$section-name} .sec-title-wrapper::before{
+    content: $content;
+  }
+}
+

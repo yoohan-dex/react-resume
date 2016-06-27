@@ -22,19 +22,13 @@ header {
 
 .title h1 {
     padding: $padding-small-vertical 0;
-    color: white;
+    color: $easy-white;
 }
 
 .title h2 {
     padding: $padding-small-vertical $padding-base-vertical;
     font-weight: normal;
 }
-
-.header-qrcode {
-    float: left;
-    margin: 0;
-}
-
 
 
 header .contact {
@@ -57,7 +51,12 @@ header .contact li {
 }
 
 header a:link, header a:visited {
-    color: white;
+    color: $easy-white;
+}
+
+
+header a:hover, header a:active {
+    color: $light-color;
 }
 
 

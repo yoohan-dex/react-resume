@@ -4,7 +4,7 @@ const Contact = (contact) => {
   switch (contact.type) {
     case 'email':
       return (
-        <li className="contact-eamil">
+        <li className="contact-envelope">
           <a href={`mailto://${contact.value}`}>
             {contact.value}
           </a>
@@ -12,7 +12,7 @@ const Contact = (contact) => {
       );
     case 'wechat':
       return (
-        <li className="contact-wechar">
+        <li className="contact-wechat">
           {contact.value}
         </li>
       );
@@ -26,7 +26,7 @@ const Contact = (contact) => {
       );
     case 'blog':
       return (
-        <li className="contact-blog">
+        <li className="contact-rss">
           <a href={contact.value}>{contact.value}</a>
         </li>
       );
@@ -36,6 +36,12 @@ const Contact = (contact) => {
           {contact.value}
         </li>
       );
+    case 'weibo':
+      return (
+        <li className="contact-weibo">
+          <a href={`http://weibo.com/${contact.value}`}>{contact.value}</a>
+        </li>
+      )
     default:
       return null;
   }

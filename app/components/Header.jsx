@@ -1,21 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Contact from '../wheels/Contact';
 
-
-// function renderContact(contact) {
-//   return{
-//     for (const type in contact) {
-//       ;
-//     }
-//   }
-// }
-
 const Header = (props) => {
-  // const contact = renderContact(props.contact);
   const renderContact = (contact) =>
     <Contact type={contact.type} value={contact.value} />;
-
-
   return (
     <header className="row">
       <section className="title">
@@ -31,5 +19,10 @@ const Header = (props) => {
   );
 };
 
+Header.propTypes = {
+  name: PropTypes.string.isRequired,
+  job_description: PropTypes.array,
+  contact: PropTypes.array,
+};
 
 export default Header;

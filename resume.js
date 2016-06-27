@@ -18,5 +18,17 @@ module.exports = {
   }, {
     type: 'phone',
     value: '13824829707',
+  }, {
+    type: 'weibo',
+    value: 'yoohan555',
   }],
+  education: {
+    timeline: true,
+    type: 'undergraduate',
+    school: '广东海洋大学',
+    major: '计算机科学',
+    start: 2013,
+    end: 2017,
+    honor: '奖',
+  },
 };
