@@ -1,7 +1,7 @@
-.education-name {
+.education-school {
   font-size: $font-size-huge;
   font-weight: bold;
-  margin: $padding-large-vertical 0 $padding-small-vertical 0 ;
+  margin: 0;
 }
 
 .education-major,
@@ -14,9 +14,12 @@
 @include set-section-icon(education, $fa-var-book);
 
 .education-major {
-  @include set-li-icon($fa-var-graduation-cap);
+  @include set-li-icon($fa-var-book);
 }
 .education-honor {
   
   @include set-li-icon($fa-var-trophy);
+}
+.education-description {
+
 }

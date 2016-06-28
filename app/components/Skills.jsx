@@ -1,7 +1,9 @@
 import React from 'react';
 import Section from './Section';
-const Experience = (props) => {
-  const section = props.section_names.experience;
+
+const Skills = (props) => {
+  const section = props.section_names.skills;
+
   return (
     <Section section={section}>
       <dl></dl>
@@ -9,4 +11,4 @@ const Experience = (props) => {
   );
 };
 
-export default Experience;
+export default Skills;

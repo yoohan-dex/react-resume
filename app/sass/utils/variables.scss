@@ -3,8 +3,8 @@ $link-hover-color: $bright-contrast-color;
 $light-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 
 
-$text-color: $font-gray;
-$bg-color: $easy-white;
+$text-color: $gray;
+$bg-color: #E0E0E0;
 $font-size-base:  16px;
 $font-size-huge: $font-size-base * 2;
 $font-size-large: $font-size-base * 1.25;
@@ -111,5 +111,13 @@ $fa-version:          "4.3.0";
 $fa-font-size-base:   14px;
 
 //== Section
-
-
+$sec-icon-size: 32px;
+$sec-icon-padding: 6px;
+//== Timeline
+$timeline-icon-overlap: ($sec-icon-size + $sec-icon-padding) / 2 + 10px;
+$timeline-icon-radius: ($sec-icon-size) / 2 + $sec-icon-padding;
+$timeline-item-size: 26px;
+$timeline-item-padding: 6px;
+$timeline-content-padding: 16px;
+$timeline-end-size: 14px;
+$timeline-line-width: 4px;

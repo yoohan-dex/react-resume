@@ -1,0 +1,19 @@
+.timeline-wrapper {
+  @include float-container;
+  float: right;
+}
+
+.timeline li {
+  list-style-type: none;
+}
+
+.timeline-tiem {
+  padding-bottom: $timeline-end-size;
+}
+
+.timeline-title {
+  padding: $padding-large-vertical $padding-large-horizontal;
+  margin: 0 $padding-small-horizontal 0 0;
+
+  @include float-container;
+}

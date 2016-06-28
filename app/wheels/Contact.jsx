@@ -36,12 +36,12 @@ const Contact = (contact) => {
           {contact.value}
         </li>
       );
-    case 'weibo':
-      return (
-        <li className="contact-weibo">
-          <a href={`http://weibo.com/${contact.value}`}>{contact.value}</a>
-        </li>
-      )
+    // case 'weibo':
+    //   return (
+    //     <li className="contact-weibo">
+    //       <a href={`http://weibo.com/${contact.value}`}>{contact.value}</a>
+    //     </li>
+    //   );
     default:
       return null;
   }

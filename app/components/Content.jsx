@@ -1,16 +1,20 @@
 import React from 'react';
 import Education from './Education';
-const Content = (props) => {
-  return (
-    <article className="content row">
-      <article className="col-6 first col">
-        <Education education={props.education} />
-      </article>
-      <article className="col-6 last column">
-        <h2>hiosdjfiljdsf</h2>
-      </article>
+import Language from './Language';
+import Experience from './Experience';
+import Skills from './Skills';
+const Content = (props) => (
+  <article className="content row">
+    <article className="col-6 first col">
+      <Education {...props} />
+      <Language {...props} />
+      <Experience {...props} />
     </article>
-  );
-};
+    <article className="col-6 last col">
+      <Skills {...props} />
+    </article>
+  </article>
+);
+
 
 export default Content;

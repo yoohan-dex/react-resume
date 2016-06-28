@@ -1,9 +1,16 @@
 header {
-    padding-bottom: $padding-base-vertical;
-    background-color: $text-color;
-    color: white;
+	@include float-container;
+	padding-bottom: $padding-base-vertical;
+	background-color: $bright-color;
+	color: white;
+	box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3),
+              0px -2px 5px 0px rgba(255, 255, 255, 0.2) inset; 
 }
-
+.header-row {
+  margin-left: -8px;
+  margin-right: -8px;
+  overflow: hidden;
+}
 .title {
     float: right;
     text-align: right;
@@ -30,10 +37,14 @@ header {
     font-weight: normal;
 }
 
+address {
+    @include float-container;
+}
 
 header .contact {
     float: left;
     margin: 0;
+    padding-bottom: $padding-container-vertical;
     padding-left: $padding-large-horizontal;
     @media print and (max-width: $screen-xs-max) {
       float: none;
@@ -56,7 +67,7 @@ header a:link, header a:visited {
 
 
 header a:hover, header a:active {
-    color: $light-color;
+    color: $font-gray;
 }
 
 

@@ -1,17 +1,26 @@
-$sec-icon-size: 32px;
-$sec-icon-padding: 6px;
-
 section {
   margin-bottom: $padding-huge-vertical;
 };
+.content-section {
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2),
+              0px -1px 4px 0px rgba(33, 33, 33, 0.1) inset; 
+  border-top: 3px solid $bright-color;
+  background: white;
+  margin-bottom: $padding-huge-vertical *2;
+}
 
 .sec-title-wrapper{
   @include float-container;
-}
 
+}
+.sec-content {
+  padding: 0 $padding-large-horizontal;
+  margin: -$padding-large-vertical 0 0 $padding-small-horizontal;
+  @include float-container;
+}
 .sec-title{
   float: left;
-  padding: 0;
+  padding: $padding-large-vertical $padding-large-horizontal;
   margin: 0 0 0 $padding-small-horizontal;
   @include float-container;
 }
@@ -26,17 +35,16 @@ section {
   font-size: $font-size-base;
   float: left;
   clear: left;
-  color: $bright-color;
-  font-variant: small-caps;
+  color: $light-color;
   font-weight: bold;
 }
 @mixin fa-sec-icon($content){
   @include fa-icon($sec-icon-size, $sec-icon-padding, $text-color);
   content: $content;
 }
-.sec-title-wrapper::before {
-  @include fa-sec-icon($fa-var-github-square)
-}
+// .sec-title-wrapper::before {
+//   @include fa-sec-icon($fa-var-github-square)
+// }
 @mixin set-section-icon($section-name, $content){
   .#{$section-name} .sec-title-wrapper::before{
     content: $content;
