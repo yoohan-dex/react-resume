@@ -4,7 +4,7 @@ const Footer = () => (
   <footer>
     <p>
     This resume is generated with React, Sass and Webpack by{' '}
-      <a href="http://github.com/yoohan-dex/resume">YooHan's resume generator</a>
+      <a href="http://github.com/yoohan-dex/react-resume">YooHan's resume generator</a>
     </p>
 
   </footer>

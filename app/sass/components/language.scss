@@ -1,0 +1,44 @@
+.language-certifications {
+  @include float-container;
+}
+
+.language-certifications {
+  margin : $padding-large-vertical 0 0 0;
+  padding: $padding-small-vertical $padding-small-horizontal;
+}
+
+.language-cert-wrapper {
+  font-size: $font-size-large;
+  line-height: initial;
+  @include float-container;
+}
+
+.language-cert-type {
+  float: left;
+  font-weight: bold;
+  line-height: $font-size-large * 2;
+  margin-right: $padding-large-horizontal; 
+}
+
+.language-cert-wrapper .progress{
+  float: right;
+  margin: 0;
+
+  @media (max-width: $screen-xs-max) {
+    float: right;
+    width: 75%;
+  }
+}
+
+.language-description {
+  padding-left: 0;
+  margin: $padding-large-vertical 0;
+}
+
+.language-desc-item {
+  margin-bottom: $padding-large-vertical;
+  list-style-type: none;
+  line-height: 1.4;
+  @include set-li-icon($fa-var-check);
+  padding-left: 0;
+}

@@ -1,5 +1,5 @@
 module.exports = {
-  title: ' - 个人简历',
+  title: '姚帆 - 个人简历',
   name: '姚帆',
   repo: 'https://github.com/yoohan-dex/resume.git',
   job_description: ['前端工程师', 'JS工程师'],
