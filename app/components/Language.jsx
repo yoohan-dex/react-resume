@@ -6,7 +6,7 @@ const Language = (props) => {
   const renderCertification = (certification) =>
     <Progress cert={certification} />;
   const renderDescription = (description) =>
-    <dd>{description}</dd>;
+    <dd className="language-desc-item">{description}</dd>;
   return (
     <Section section={section}>
       {props.language.certifications.map(renderCertification)}

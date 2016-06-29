@@ -1,0 +1,65 @@
+.language-certifications {
+  @include float-container;
+}
+
+.language-certifications {
+  margin : $padding-large-vertical 0 0 0;
+  padding: $padding-small-vertical $padding-small-horizontal;
+}
+
+.language-cert-wrapper {
+  font-size: $font-size-large;
+  line-height: initial;
+  @include float-container;
+}
+
+.language-cert-type {
+  float: left;
+  font-weight: bold;
+  line-height: $font-size-large * 2;
+  margin-right: $padding-large-horizontal; 
+}
+
+.language-cert-wrapper .progress{
+  float: right;
+  width: 80%;
+  margin: 0;
+
+  @media (max-width: $screen-xs-max) {
+    float: right;
+    width: 75%;
+  }
+}
+
+.language-description {
+  padding-left: 0;
+  margin: $padding-large-vertical 0;
+}
+
+.language-desc-item {
+  margin-bottom: $padding-large-vertical;
+  list-style-type: none;
+  line-height: 1.4;
+  @include set-li-icon($fa-var-check);
+}
+
+.progress {
+  overflow: hidden;
+  border-bottom: 1px solid $light-gray;
+  width: 80%;
+}
+
+.progress-status {
+  border-bottom: 2px solid $bright-color; 
+  text-align: right;
+  width: 50px;
+  padding-right: $padding-small-horizontal; 
+}
+
+.progress-score {
+  font-weight: bold;
+}
+
+
+
+

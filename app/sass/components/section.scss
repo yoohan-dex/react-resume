@@ -6,7 +6,11 @@ section {
               0px -1px 4px 0px rgba(33, 33, 33, 0.1) inset; 
   border-top: 3px solid $bright-color;
   background: white;
-  margin-bottom: $padding-huge-vertical *2;
+  margin-bottom: $padding-container-vertical;
+  @media (max-width: $screen-xs-max){
+    margin-bottom: $padding-large-vertical;
+  }
+  padding-bottom: $padding-large-vertical;
 }
 
 .sec-title-wrapper{
