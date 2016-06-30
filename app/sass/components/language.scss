@@ -3,8 +3,12 @@
 }
 
 .language-certifications {
-  margin : $padding-large-vertical 0 0 0;
+  margin: $padding-large-vertical 0 0 0;
   padding: $padding-small-vertical $padding-small-horizontal;
+  @media (max-width: $screen-xs-max){
+    margin: 0;
+    padding: 0 $padding-small-horizontal;
+  }
 }
 
 .language-cert-wrapper {

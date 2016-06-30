@@ -1,0 +1,47 @@
+.exp-item-wrapper {
+}
+
+.exp-item-title {
+  color: $dark-color;
+
+
+
+    
+}
+
+.exp-item-type {
+  font-size: $font-size-large + $padding-small-vertical/2;
+  margin: $padding-small-vertical $padding-small-horizontal;
+  @media (max-width : $screen-xs-max){
+    font-size: $font-size-base + $padding-small-vertical/2;
+  }
+}
+
+.exp-item-description {
+  
+}
+
+.exp-item-link,
+.exp-item-resource {
+  float: right;
+  margin-left: 20px;
+  border: 1px solid $dark-color;
+  border-radius: $border-radius-small;
+  font-size: $font-size-small;
+  padding: $padding-small-vertical $padding-small-horizontal;
+  cursor: pointer;
+  &:hover{
+    background: $bright-color;
+    color: $easy-white;
+    border-color: $bright-color;
+  }
+  @media (max-width: $screen-xs-max){
+    margin-left: 5px;
+    font-size: $font-size-mini;
+    padding: $padding-small-vertical $padding-small-horizontal;
+  }
+}
+
+.exp-item-resource {
+
+}

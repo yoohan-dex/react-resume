@@ -26,7 +26,7 @@ const Section = (props) => {
         {timeline}
       </div>
       <div className="sec-content">
-          {props.children}
+        {props.children}
       </div>
     </section>
   );
