@@ -2,6 +2,9 @@
   font-size: $font-size-huge;
   font-weight: bold;
   margin: 0;
+  @media ( max-width : $screen-xs-max ){
+    font-size: $font-size-large;
+  }
 }
 
 .education-major,

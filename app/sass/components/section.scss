@@ -1,3 +1,6 @@
+@mixin mediumFont{
+  font-size: $font-size-medium;  
+}
 section {
   margin-bottom: $padding-huge-vertical;
 };
@@ -16,11 +19,10 @@ section {
 
 .sec-title-wrapper{
   @include float-container;
-
 }
 .sec-content {
   padding: 0 $padding-large-horizontal;
-  margin: -$padding-large-vertical 0 0 $padding-small-horizontal;
+  // margin: -$padding-large-vertical 0 0 $padding-small-horizontal;
   @include float-container;
 }
 .sec-title{
@@ -28,12 +30,14 @@ section {
   padding: $padding-large-vertical $padding-large-horizontal;
   margin: 0 0 0 $padding-small-horizontal;
   @include float-container;
+  
 }
 
 .sec-title-ch {
   font-size: $font-size-large;
   float: left;
   font-weight: bold;
+  @include mediumFont;
 }
 
 .sec-title-en {
@@ -42,6 +46,7 @@ section {
   clear: left;
   color: $light-color;
   font-weight: bold;
+  @include mediumFont;
 }
 @mixin fa-sec-icon($content){
   @include fa-icon($sec-icon-size, $sec-icon-padding, $text-color);

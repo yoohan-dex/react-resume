@@ -12,6 +12,7 @@
 .exp-item-type {
   font-size: $font-size-large + $padding-small-vertical/2;
   margin: $padding-small-vertical $padding-small-horizontal;
+  font-weight: bold;
   @media (max-width : $screen-xs-max){
     font-size: $font-size-base + $padding-small-vertical/2;
   }
@@ -30,10 +31,17 @@
   font-size: $font-size-small;
   padding: $padding-small-vertical $padding-small-horizontal;
   cursor: pointer;
+  transition: all 0.2s;
+  a {
+    color: $dark-color; 
+  }
   &:hover{
     background: $bright-color;
     color: $easy-white;
     border-color: $bright-color;
+    a {
+      color: $easy-white;
+    }
   }
   @media (max-width: $screen-xs-max){
     margin-left: 5px;

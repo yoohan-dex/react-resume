@@ -47,4 +47,21 @@ module.exports = {
       '能够在英文邮件列表、Stack Overflow 等社区正常交流',
     ],
   },
+  experience: [{
+    name: 'Tencent practice',
+    start: '2016.06.12',
+    end: '2017.02.01',
+    description: [
+      'developed a great website like this.',
+      'and update the inside system.',
+    ],
+  }, {
+    name: 'Tencent practice',
+    start: '2016.06.12',
+    end: '2017.02.01',
+    description: [
+      'developed a great website like this.',
+      'and update the inside system.',
+    ],
+  }],
 };

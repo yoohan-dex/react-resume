@@ -1,6 +1,13 @@
 .timeline-wrapper {
   @include float-container;
   float: right;
+  @media(max-width: $screen-xs-max){
+    // float: left;
+    // clear: left;
+    // margin:0 $padding-small-horizontal;
+    font-size: $font-size-small;
+    line-height: $font-size-medium*2;
+  }
 }
 
 .timeline li {
@@ -16,4 +23,9 @@
   margin: 0 $padding-small-horizontal 0 0;
 
   @include float-container;
+  // @media(max-width: $screen-xs-max){
+  //   margin: 0 padding-small-horizontal;
+  //   padding: 0 padding-small-horizontal;
+    
+  // }
 }

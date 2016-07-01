@@ -12,8 +12,12 @@ export default {
       en: 'Language',
     },
     experience: {
-      ch: '项目与工作经验',
+      ch: '工作经验',
       en: 'Experience',
+    },
+    project: {
+      ch: '个人项目',
+      en: 'Personal Project',
     },
     skills: {
       ch: '技能',
