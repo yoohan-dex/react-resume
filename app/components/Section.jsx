@@ -17,15 +17,19 @@ const Section = (props) => {
   //   </div>
   // );
   return (
-    <section className="content-section">
+    <section
+      className={`
+        ${props.item ? 'content-section-item' : 'content-section'} 
+      `}
+    >
       <div className="sec-title-wrapper">
-        <h3 className="sec-title">
+        <h3 className={props.item ? 'sec-title-item' : 'sec-title'}>
           <span className="sec-title-ch">{props.section.ch}</span>
           <span className="sec-title-en">{props.section.en}</span>
         </h3>
         {timeline}
       </div>
-      <div className="sec-content">
+      <div className={props.iteminitem ? 'sec-item-in-item' : 'sec-content'}>
         {props.children}
       </div>
     </section>

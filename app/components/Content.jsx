@@ -6,15 +6,13 @@ import Project from './Project';
 import Skills from './Skills';
 
 const Content = (props) => {
-  const renderExperience = (exp) => (
-    <Experience exp={exp} section={props.section_names.experience}/>
-  );
+  
   return (
     <article className="content row">
       <article className="col-6 first col">
         <Education {...props} />
         <Language {...props} />
-          {props.experience.map(renderExperience)}
+        <Experience {...props} />
         <Project {...props} />
       </article>
       <article className="col-6 last col">

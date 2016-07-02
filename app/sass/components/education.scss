@@ -17,7 +17,7 @@
 @include set-section-icon(education, $fa-var-book);
 
 .education-major {
-  @include set-li-icon($fa-var-book);
+  @include set-li-icon($fa-var-graduation-cap);
 }
 .education-honor {
   

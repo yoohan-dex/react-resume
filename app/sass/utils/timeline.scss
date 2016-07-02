@@ -8,6 +8,10 @@
     font-size: $font-size-small;
     line-height: $font-size-medium*2;
   }
+  @media(max-width: 373px){
+    float: left;
+    margin-left: 5px;
+  }
 }
 
 .timeline li {

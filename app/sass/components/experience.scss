@@ -1,0 +1,18 @@
+.exp-place {
+  font-size: $font-size-large;
+}
+
+.exp-description {
+  padding-left: $padding-small-horizontal;
+  margin: $padding-small-vertical 0;
+}
+
+.exp-description-item {
+  margin-top: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
+  list-style-type: none;
+  line-height: 1.4;
+  @include set-li-icon($fa-var-wrench);
+  padding-left: 0;
+}
+
