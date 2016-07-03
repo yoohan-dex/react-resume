@@ -28,7 +28,7 @@ module.exports = {
     major: '计算机科学',
     start: 2013,
     end: 2017,
-    honor: '2016年度校级SB一等奖',
+    honor: '2016年度`校级SB一等奖`',
   },
   language: {
     type: 'english',
@@ -42,9 +42,9 @@ module.exports = {
       score: '480',
     }],
     descriptions: [
-      '能流畅阅读英文专业书籍、文档及其他资料',
-      '可无字幕观看 MOOC 课程、开发者大会视频',
-      '能够在英文邮件列表、Stack Overflow 等社区正常交流',
+      '能`流畅阅读`英文专业书籍、文档及其他资料',
+      '可`无字幕`观看MOOC课程、开发者大会视频',
+      '能够在`英文邮件列表`、`Stack Overflow` 等社区正常交流',
     ],
   },
   experience: [{
@@ -54,8 +54,8 @@ module.exports = {
     start: '2017.06.12',
     end: '2017.02.01',
     descriptions: [
-      '参与公司内部办公系统的前端开发，基于React和Bootstrap实现前端组件及数据交互',
-      '使用wepback和Sass完成可扩增的自动化工程部署',
+      '参与公司内部办公系统的前端开发，基于`React`和`Bootstrap`实现前端组件及数据交互',
+      '使用`wepback`和`Sass`完成可扩增的`自动化工程部署`',
     ],
     stack: ['bootstrap', 'redux', 'react', 'sass', 'webpack'],
   }, {
@@ -67,7 +67,7 @@ module.exports = {
     descriptions: [
       '负责开发整容点评网站前端页面',
       '引导新生走进前端的世界',
-      '使用webpack，Sass和React为实验室构建一套自动化开发手脚架',
+      '使用`webpack`，`Sass`和`React`为实验室构建一套自动化开发手脚架',
     ],
     stack: ['webpack', 'redux', 'functional programing'],
   }],
@@ -78,7 +78,7 @@ module.exports = {
     source: 'https://github.com/yoohan-dex/react-resume',
     descriptions: [
       '这份在线简历的生成器',
-      '从 js文 读取数据，React 生成 HTML，Sass 生成响应式样式',
+      '从 `js文` 读取数据，`React `生成 `HTML`，`Sass` 生成响应式样式',
     ],
   }, {
     ch: '简历生成器',
@@ -87,7 +87,7 @@ module.exports = {
     source: 'https://github.com/yoohan-dex/react-resume',
     descriptions: [
       '这份在线简历的生成器',
-      '从 js文 读取数据，React 生成 HTML，Sass 生成响应式样式',
+      '从 `js文` 读取数据，`React `生成 `HTML`，`Sass `生成响应式样式',
     ],
   }],
   skills: [{
@@ -101,7 +101,7 @@ module.exports = {
     ],
   }, {
     ch: '前端工程实践',
-    brief: 'WEBPACK,GULP,NPM',
+    brief: '`WEBPACK`,`GULP`,`NPM`',
     descriptions: ['', '', ''],
   }],
 };
