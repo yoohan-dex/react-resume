@@ -9,7 +9,7 @@ const ExperienceItem = (props) => {
     <Section item section={exp} startTime={exp.start} endTime={exp.end}>
       <dl className="exp-description">
         <dt className="exp-place">{exp.place}</dt>
-        {exp.description.map(renderDescription)}
+        {exp.descriptions.map(renderDescription)}
         <dd className="exp-stack"></dd>
       </dl>
     </Section>

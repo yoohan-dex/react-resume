@@ -11,7 +11,7 @@ const Language = (props) => {
     <Section section={section}>
       {props.language.certifications.map(renderCertification)}
       <dl className="language-description">
-        {props.language.description.map(renderDescription)}
+        {props.language.descriptions.map(renderDescription)}
       </dl>
     </Section>
   );

@@ -2,8 +2,8 @@
   font-family: FontAwesome;
   font-size: inherit;
   text-rendering: auto;
-  font-smoothing: grayscale;
-  tansform: translate(0,0);
+  font-smooth: grayscale;
+  tansiform: translate(0,0);
 }
 
 @mixin fa-icon($size, $padding, $background, $foreground : $easy-white){

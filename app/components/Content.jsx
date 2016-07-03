@@ -13,9 +13,9 @@ const Content = (props) => {
         <Education {...props} />
         <Language {...props} />
         <Experience {...props} />
-        <Project {...props} />
       </article>
       <article className="col-6 last col">
+        <Project {...props} />
         <Skills {...props} />
       </article>
     </article>

@@ -36,12 +36,13 @@
 }
 
 .language-description {
-  padding-left: 0;
+  padding: $padding-small-vertical $padding-small-horizontal;
   margin: $padding-large-vertical 0;
 }
 
 .language-desc-item {
-  margin-bottom: $padding-large-vertical;
+  margin-top: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
   list-style-type: none;
   line-height: 1.4;
   @include set-li-icon($fa-var-check);

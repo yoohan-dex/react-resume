@@ -7,6 +7,12 @@ const Section = (props) => {
       </time>
     </h3>
   ) : null;
+  const demo = props.demo? (
+    <a href={props.demo} className="project-demo">DEMO</a>
+  ) : null;
+  const source = props.source ? (
+    <a href={props.source} className="project-source">源代码</a>
+  ) : null;
   //   <div className="timeline-wrapper">
   //     <ul className="sec-content timeline">
   //       {props.children}
@@ -24,10 +30,14 @@ const Section = (props) => {
     >
       <div className="sec-title-wrapper">
         <h3 className={props.item ? 'sec-title-item' : 'sec-title'}>
-          <span className="sec-title-ch">{props.section.ch}</span>
-          <span className="sec-title-en">{props.section.en}</span>
+          <span className={`sec${props.item ? '-item' : ''}-title-ch`}>{props.section.ch}</span>
+          <span className={`sec${props.item ? '-item' : ''}-title-en`}>{props.section.en}</span>
         </h3>
         {timeline}
+        <h3 className="project-link-wrapper">
+          {demo}
+          {source}
+        </h3>
       </div>
       <div className={props.iteminitem ? 'sec-item-in-item' : 'sec-content'}>
         {props.children}

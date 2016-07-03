@@ -1,12 +1,13 @@
 import React from 'react';
 import Section from './Section';
-
+import Skill from './Skill';
 const Skills = (props) => {
   const section = props.section_names.skills;
-
+  const renderSkill = (skill) =>
+    <Skill skill={skill} />;
   return (
-    <Section section={section}>
-      <dl></dl>
+    <Section iteminitem section={section}>
+      {props.skills.map(renderSkill)}
     </Section>
   );
 };

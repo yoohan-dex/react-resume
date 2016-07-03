@@ -1,10 +1,13 @@
 .exp-place {
   font-size: $font-size-large;
+  margin-left: $padding-base-horizontal;
+  @include set-li-icon($fa-var-map-marker);
 }
 
 .exp-description {
-  padding-left: $padding-small-horizontal;
+  padding-right: $padding-small-horizontal;
   margin: $padding-small-vertical 0;
+
 }
 
 .exp-description-item {

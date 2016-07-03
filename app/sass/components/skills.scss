@@ -1,0 +1,18 @@
+.skill-description {
+  padding: $padding-small-vertical $padding-small-horizontal;
+  margin: $padding-large-vertical 0;
+}
+
+.skill-brief {
+  font-size: font-size-base;
+  font-weight: bold;
+}
+
+.skill-description-item {
+  margin-top: $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
+  list-style-type: none;
+  line-height: 1.4;
+  @include set-li-icon($fa-var-check);
+  padding-left: 0;
+}

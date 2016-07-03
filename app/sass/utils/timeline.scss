@@ -8,10 +8,6 @@
     font-size: $font-size-small;
     line-height: $font-size-medium*2;
   }
-  @media(max-width: 373px){
-    float: left;
-    margin-left: 5px;
-  }
 }
 
 .timeline li {
@@ -20,6 +16,7 @@
 
 .timeline-tiem {
   padding-bottom: $timeline-end-size;
+  
 }
 
 .timeline-title {
@@ -27,6 +24,10 @@
   margin: 0 $padding-small-horizontal 0 0;
 
   @include float-container;
+  @media(max-width: $screen-ip5-max){
+    padding-left: 0;
+    padding-right: 0;
+  }
   // @media(max-width: $screen-xs-max){
   //   margin: 0 padding-small-horizontal;
   //   padding: 0 padding-small-horizontal;

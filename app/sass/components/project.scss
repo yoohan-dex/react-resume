@@ -1,0 +1,32 @@
+.project-link-wrapper {
+  line-height: $font-size-base + $font-size-small;
+  @include float-container;
+  float: right;
+  margin-right: $padding-large-horizontal + $padding-small-horizontal;
+  @media(max-width: $screen-xs-max){
+    // float: left;
+    // clear: left;
+    // margin:0 $padding-small-horizontal;
+    font-size: $font-size-small;
+    line-height: $font-size-medium*2;
+  }
+}
+
+.project-demo,
+.porject-source {
+  margin-right: $padding-large-horizontal*2;
+  @media(max-width: $screen-xs-max) {
+    margin-right: $padding-base-horizontal;
+  }
+}
+
+.project-description {
+  adding-left: $padding-small-horizontal;
+  padding-right: $padding-small-horizontal;
+  margin: $padding-small-vertical 0;
+
+}
+.project-description-item {
+  @include set-li-icon($fa-var-fire);
+  padding-left: 0;
+}
